@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+
+    <!-- CSS ku -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Belajar Grid System</title>
+  </head>
+   <style type="text/css">
+   .lana {
+      background: #fff ;
+      text-align: center;
+      padding: 10px;
+      }
+    .box { border: 1px solid red;
+     } 
+     .nidhom {
+      background: #91cde0;
+      text-align: center;
+      border: 1px solid  #91cde0 ;
+      padding: 10px;
+      color: #fff;
+     } 
+   .muna {
+    background: #2ea3f2;
+      text-align: center;
+      border: 1px solid #2ea3f2 ;
+      padding: 10px;
+      color: #fff;}
+    .ndhm{
+background:  #fff;
+      text-align: center;
+      border: 1px solid #2ea3f2 ;
+      padding: 10px;
+      color: #fff;
+    }
+    .lna
+       {
+background: #2ea3f2;
+      
+    }</style>
+  <body id="home" oncontextmenu="return false" onkeydown="return false" onmousedown="return false">
+    <!-- navbar / menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fw-bold fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="https://getbootstrap.com/docs/5.0/components/navbar/" target="blue">NIDHOMUL MUNA L</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+            <a class="nav-link active" href="#warna">Warna</a>
+            <a class="nav-link active" href="#galeri">Galeri</a>
+            <a class="nav-link active" href="#hubungi">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar / menu -->
+
+    <!-- beranda -->
+    <section class="nidhom" id="beranda">
+      <h2 class="textJudul text-center">Belajar Grid System</h2>
+      <p class="text1 text-center text-danger fw-bold">Apa sih Grid itu? Penting tidak Grid di terapkan pada website? </p>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <p class="text1">
+            Menggunakan <b>Grid System</b> memudahkan kita dalam mengatur tata letak elemen saat membuat website. 
+            Zaman dahulu, kebanyakan website menggunakan tag <i>table</i> untuk mengatur tata letak (layout-nya). 
+            Sekarang sudah tag <i>table</i> tidak digunakan lagi, karena kurang efektif dan tidak <i>SEO friendly</i>. 
+            Oleh karena itu, website zaman sekarang menggunakan CSS untuk mengatur tata letaknya. 
+            Sistem Grid di Bootstrap mengadopsi konsep tabel. 
+            Karena itu, Kita hanya perlu menggunakan tiga kelas untuk membuatnya. 
+            Kelas tersebut kita terapkan dalam tag 'div'. 
+            <br />Berikut ini ketiga kelas yang dimaksud, diantaranya:<br/> 
+            <b> 1. Kelas .container:</b> Kelas kontainer berfungsi membungkus konten website. Kelas ini sama fungsinya seperti tag 'table'. <br/>
+            <b>2. Kelas .row:</b> Berfungsi untuk membuat baris (penempatanya di dalam Kelas .container), <br/>
+            <b>3. Kelas .col:</b> berfungsi untuk membuat kolom (penempatanya di dalam Kelas .row).
+          </p>
+        </div>
+        <div class="col-md-5">
+            <p class="text1">Grid System yang ada di Bootstrap mempunyai fungsi sendiri-sendiri, diantaranya:</p>
+            <ul class="text1">
+              <li>col-lg-*: digunakan untuk mengatur grid pada monitor komputer yang berukuran besar.</li>
+              <li>col-md-*: digunakan untuk mengatur grid pada layar monitor komputer yang berukuran sedang.</li>
+              <li>col-sm-*: digunakan untuk mengatur grid pada monitor yang berukuran tablet.</li>
+              <li>col-xs-*: digunakan untuk mengatur grid untuk ukuran handphone.</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <!-- akhir beranda -->
+
+    <!-- Warna -->
+    <section id="warna">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-10">
+            <h2 class="textjdl">Bermain Warna Menggunakan Grid</h2>
+            <p class="text1 text-success">Menggunakan <a href="https://getbootstrap.com/docs/5.0/layout/grid/" target="_blank"><b>.row</b></a> 
+              dan <a href="https://getbootstrap.com/docs/5.0/layout/grid/" target="_blank"><b>.col</b></a> untuk memisah beberapa Warna (Gambar Berwarna)
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <img src="hijau.jpg" alt="" class="img-fluid gmbr" />
+          </div>
+          <div class="col-2">
+            <img src="biru.jpg" alt="" class="img-fluid gmbr" />
+          </div>
+          <div class="col-2">
+            <img src="hitam.jpg" alt="" class="img-fluid gmbr" />
+          </div>
+          <div class="col-2">
+            <img src="ungu.jpg" alt="" class="img-fluid gmbr" />
+          </div>
+          <div class="col-2">
+            <img src="kuning.jpg" alt="" class="img-fluid gmbr" />
+          </div>
+          <div class="col-2">
+            <img src="merah.jpg" alt="" class="img-fluid gmbr" />
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-3">
+            <img src="hitam.jpg" class="img-fluid gmbr1" alt="Hitam" />
+          </div>
+          <div class="col-3">
+            <img src="merah.jpg" class="img-fluid gmbr1" alt="Merah" />
+          </div>
+          <div class="col-3">
+            <img src="ungu.jpg" class="img-fluid gmbr1" alt="Ungu" />
+          </div>
+          <div class="col-3">
+            <img src="hijau.jpg" class="img-fluid gmbr1" alt="Hijau" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="orange.png" class="img-fluid gmbr2" alt="Orange" />
+          </div>
+          <div class="col-4">
+            <img src="coklat.jpg" class="img-fluid gmbr2" alt="Coklat" />
+          </div>
+          <div class="col-4">
+            <img src="merah.jpg" class="img-fluid gmbr2" alt="Merah" />
+          </div>
+          <br>
+        </div>
+        <div class="row"></div>
+        <div class="col-12">
+            <img src="" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- akhir Warna -->
+
+    <!-- Galeri -->
+    <section id="galeri">
+      <div class="muna">
+        <div class="row text-center">
+          <div class="col mb-3">
+            <h2 class="textJudul">Bermain Gambar dan Keterangan Menggunakan Card</h2>
+            <p class="textform1 text-danger">Menggunakan <a href="https://getbootstrap.com/docs/5.0/components/card/" target="_blank"><b>.cards</b></a> untuk memisah beberapa <a href="https://getbootstrap.com/docs/5.0/content/images/" target="_blank"><b>Gambar</b>.</a> berserta Keteranganya</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="monumen 1.jpg" class="card-img-top rounded-circle img-thumbnail" alt="Birmingham Museums Trust" />
+              <div class="card-body">
+                <p class="card-text text-center textform1">Lukisan yang ada di Birmingham Museums Trust (<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.tiket.com%2Finilah-lima-monumen-paling-bersejarah-di-indonesia%2F&psig=AOvVaw3kq_6RCdjN08EJrgaiCIOc&ust=1622037455656000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLja3cP-5PACFQAAAAAdAAAAABA3" target="_blank">Sumber Gambar</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="monumen 2.jpg" class="card-img-top rounded-circle img-thumbnail" alt="Alan Scales" />
+              <div class="card-body">
+                <p class="card-text text-center textform1">Lukisan yang diabadikan oleh Alan Scales (<a href="https://www.google.com/url?sa=i&url=http%3A%2F%2Fkota-pekalongan.aisyiyah.or.id%2Fid%2Fberita%2Fkokam-turut-berpartisipasi-dalam-kolosal-pertempuran-3-oktober-di-monumen-djoeang-pekalongan.html&psig=AOvVaw3kq_6RCdjN08EJrgaiCIOc&ust=1622037455656000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLja3cP-5PACFQAAAAAdAAAAABAx" target="_blank">Sumber Gambar</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="monumen 3.jpg" class="card-img-top rounded-circle img-thumbnail" alt="Francesco De Tommaso" />
+              <div class="card-body">
+                <p class="card-text text-center textform1">Lukisan yang diabadikan oleh Francesco De Tommaso (<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftempatwisataunik.com%2Fwisata-indonesia%2Fmonumen-bersejarah-di-indonesia&psig=AOvVaw3kq_6RCdjN08EJrgaiCIOc&ust=1622037455656000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLja3cP-5PACFQAAAAAdAAAAABA-" target="_blank">Sumber Gambar</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="monumen 4.jpg" class="card-img-top rounded-circle img-thumbnail" alt="David Pisnoy" />
+              <div class="card-body">
+                <p class="card-text text-center textform1">Lukisan yang diabadikan oleh David Pisnoy (<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftravelingyuk.com%2Fmonumen-peta-blitar%2F197141&psig=AOvVaw3kq_6RCdjN08EJrgaiCIOc&ust=1622037455656000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLja3cP-5PACFQAAAAAdAAAAABBE" target="_blank">Sumber Gambar</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="paris.jpg" class="card-img-top rounded-circle img-thumbnail" alt="Steve Johnson" />
+              <div class="card-body">
+                <p class="card-text text-center textform1">Lukisan yang diabadikan oleh Steve Johnson (<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pikiran-rakyat.com%2Finternasional%2Fpr-01400176%2Flockdown-di-buka-warga-paris-berharap-kotanya-kembali-diisi-turis&psig=AOvVaw01D1gD3nKsme3G6OJVzSK-&ust=1622039131374000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiV3uKE5fACFQAAAAAdAAAAABAD" target="_blank">Sumber Gambar</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="kediri.jpg" class="card-img-top rounded-circle img-thumbnail" alt="OB" />
+              <div class="card-body">
+                <p class="card-text text-center textform1">Lukisan yang diabadikan oleh OB (<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.visa.co.id%2Ftravel-with-visa%2Fdestinations%2Fparis.html&psig=AOvVaw01D1gD3nKsme3G6OJVzSK-&ust=1622039131374000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiV3uKE5fACFQAAAAAdAAAAABAJ" target="_blank">Sumber Gambar</a>)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Galeri -->
+
+    <!-- Hubungi Kami -->
+    <section id="hubungi">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-3">
+            <h2 class="textjdl">Hubungi Kami</h2>
+            <h6 style="color: green">jika ada yang mau di diskusikan silahkan<mark style=" font-style: underline;"> Hubungi Kami</mark>(wa saja) </h6>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label text3">Nama Lengkap:</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text text-form"></span>
+                  <input type="text" class="form-control" placeholder="Isi Nama..." id="nama" aria-describedby="nama" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text3">E-Mail Anda:</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text text-primary"></span>
+                  <input type="email" class="form-control" placeholder="Isi e-Mail..." id="email" aria-describedby="email" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label text3">Isi Pesan :</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text text-primary"></span>
+                  <textarea class="form-control" placeholder="Isi Pesan..." id="pesan" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary text-form fw-bold text3">Kirim</button>
+              </div>
+            </form>
+            <div class="mb-3">
+            <p class="card-text text-center text1"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Hubungi Kami -->
+
+    <!-- Footer -->
+    <footer>
+        <p style="color: red; text-align: center;"><b>20.240.0053-NIDHOMUL MUNA LANA &copy;copyright 2021.</p> 
+    </footer> 
+    <!-- Akhir Footer -->
+</body>
+</html>
